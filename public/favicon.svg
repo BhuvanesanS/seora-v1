@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="seaora-red" x1="7" y1="6" x2="57" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dc5647"/>
+      <stop offset="1" stop-color="#a9221b"/>
+    </linearGradient>
+    <linearGradient id="seaora-blue" x1="35" y1="6" x2="58" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55c8f4"/>
+      <stop offset="1" stop-color="#0877b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#080a0d"/>
+  <path d="M18.2 16.5H40v8.2H25.6c-3.8 0-5.8 1.7-5.8 4.3 0 2.5 2 4.1 6.1 4.1h9.6c7.4 0 11.8 4.1 11.8 10.2 0 6.5-4.8 11.2-13.3 11.2H16.3v-8.3h16.4c3.8 0 6-1.5 6-4.2 0-2.5-1.9-4.1-5.8-4.1h-9.7c-8.1 0-12.6-4.3-12.6-10.6 0-6.7 5.1-10.8 12.6-10.8Z" fill="url(#seaora-red)"/>
+  <path d="M37.5 14.5c8.4-5.5 16.4-3.9 20.9 1.2-7.8-1.7-13.4.2-17.4 5.3 6.8-.8 12.5 1.6 16.7 7.2-7 1.9-13 .8-17.3-3.3-1.4 4.9-4.3 8.5-8.7 10.8 2.3-6.8 2.2-13.8 5.8-21.2Z" fill="url(#seaora-blue)"/>
+  <circle cx="47.3" cy="16.7" r="1.7" fill="#080a0d"/>
+  <path d="M40.7 24.2c2.6 3.8 6.1 5.2 10.7 4.4" fill="none" stroke="#080a0d" stroke-linecap="round" stroke-width="1.8"/>
+</svg>
