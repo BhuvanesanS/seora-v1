@@ -1,0 +1,32 @@
+/* Isolated homepage trial inspired by the supplied full-bleed reference. */
+.home-overlay-header{position:fixed;inset:0 0 auto;transition:background .3s,border-color .3s,box-shadow .3s}
+.home-overlay-header:not(.is-scrolled):not(.menu-is-open){background:transparent;backdrop-filter:none;border-color:transparent;box-shadow:none}
+.home-overlay-header .brand-link{background:#fff;border-radius:3px;padding:5px 10px;display:flex;align-items:center}
+.home-overlay-header:not(.is-scrolled):not(.menu-is-open) .navigation nav>a{color:#fff}
+.home-overlay-header:not(.is-scrolled):not(.menu-is-open) .navigation nav>a:after{background:#fff}
+.home-overlay-header:not(.is-scrolled):not(.menu-is-open) .menu-toggle span{background:#fff}
+.home-overlay-header.is-scrolled{box-shadow:0 3px 25px #092d3b0c}
+.immersive-hero{position:relative;isolation:isolate;overflow:hidden;min-height:740px;min-height:max(740px,100svh);display:flex;align-items:center;background:#073044;color:#fff}
+.immersive-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% center;z-index:-2}
+.immersive-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(3,27,40,.69),rgba(3,27,40,.29) 65%,rgba(3,27,40,.12)),linear-gradient(180deg,rgba(3,27,40,.48),transparent 30%,transparent 68%,rgba(3,27,40,.64));pointer-events:none}
+.immersive-content{padding-block:155px 175px}
+.immersive-content .eyebrow{color:#eef6f6;font-size:10px;letter-spacing:.18em;margin-bottom:28px}
+.immersive-content h1{font-size:clamp(64px,6.7vw,112px);line-height:1.05;letter-spacing:-.055em;font-weight:500;max-width:1050px;text-wrap:balance}
+.immersive-description{color:#f2f6f7;font-size:16px;line-height:1.8;margin-top:28px;max-width:560px}
+.immersive-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:34px}
+.immersive-actions .button{min-height:54px}
+.immersive-actions .button.button-outline{--action-base:transparent;--action-ink:#fff;--action-fill:#fff;--action-hover-ink:var(--navy);border-color:#ffffffb3}
+.immersive-actions .button-outline:hover{border-color:#fff}
+.immersive-actions .button:focus-visible{outline-color:#fff}
+.immersive-bottom{position:absolute;bottom:35px;left:0;right:0;border-top:1px solid #ffffff45;padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.immersive-bottom>span{font-size:9px;letter-spacing:.15em;line-height:1.9;color:#ecf2f2}
+.immersive-bottom>a{display:inline-flex;align-items:center;gap:24px;font-size:12px;min-height:44px}
+.immersive-bottom>a span{display:grid;place-items:center;width:40px;height:40px;border:1px solid #ffffff80;border-radius:50%;font-size:21px;transition:background .25s,transform .25s}
+.immersive-bottom>a:hover span{background:#ffffff20;transform:translateY(3px)}
+.site-shell.is-ready .immersive-photo{animation:immersive-arrive 1.6s ease-out both}
+.site-shell.is-ready .immersive-content{animation:editorial-rise .7s ease-out both}
+@keyframes immersive-arrive{from{transform:scale(1.04)}to{transform:scale(1)}}
+@media(min-width:901px) and (max-width:1100px){.home-overlay-header .navigation{gap:12px}.home-overlay-header .navigation nav{gap:12px}.home-overlay-header .wordmark.original-wordmark{width:130px}}
+@media(max-width:900px){.immersive-hero{min-height:max(720px,100svh)}.immersive-content h1{font-size:clamp(58px,8vw,80px)}.immersive-content{padding-block:150px 175px}.home-overlay-header .navigation nav{color:var(--ink)}.home-overlay-header.menu-is-open{background:#fcfcfa;backdrop-filter:none}}
+@media(max-width:650px){.immersive-hero{min-height:max(700px,100svh)}.immersive-photo{object-position:55% center}.immersive-hero:after{background:linear-gradient(90deg,#031b28bf,#031b2855),linear-gradient(180deg,#031b2855,transparent 35%,#031b2855)}.immersive-content{padding-block:140px 170px}.immersive-content .eyebrow{font-size:8px;letter-spacing:.12em;max-width:270px;line-height:1.7;margin-bottom:24px}.immersive-content h1{font-size:clamp(46px,11.5vw,70px);line-height:1.1}.immersive-description{font-size:14px;margin-top:24px;max-width:340px}.immersive-description br{display:none}.immersive-actions{gap:12px;margin-top:28px}.immersive-actions .button{font-size:12px;padding-inline:19px;gap:25px;min-height:51px}.immersive-bottom{bottom:28px;padding-top:19px;gap:15px}.immersive-bottom>span{font-size:7px;letter-spacing:.08em}.immersive-bottom>a{font-size:11px;gap:10px}.immersive-bottom>a span{width:32px;height:32px}.home-overlay-header .brand-link{padding:4px 8px}.home-overlay-header .wordmark.original-wordmark{width:135px}}
+@media(prefers-reduced-motion:reduce){.site-shell.is-ready .immersive-photo,.site-shell.is-ready .immersive-content{animation:none}.home-overlay-header,.immersive-bottom>a span{transition:none}.immersive-bottom>a:hover span{transform:none}}
